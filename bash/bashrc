@@ -1,10 +1,7 @@
 export EDITOR=nvim
-export VISUAL=nvim
 
 alias k8s='kubectl'
 alias ll='ls -lG'
-alias vim='nvim -S ~/.vimrc'
-alias nvim="nvim -S ~/.vimrc'
 
 os=$(uname -s)
 case $os in
