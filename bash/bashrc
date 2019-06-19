@@ -9,6 +9,8 @@ case $os in
     alias ls='ls --color'
     export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
     export TERM=xterm-256color
+    # This is totally a hack to work around microsoft wsl ubuntu
+    cat /etc/motd
     ;;
   Darwin*)
     export CLICOLOR=1
