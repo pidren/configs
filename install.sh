@@ -7,4 +7,7 @@ do
    echo "Installing $t configs"
    ( cd $t && ls | xargs -I '{}' cp -r ./'{}' ~/.'{}' )
 done
+
+sudo cp motd /etc/motd
+
 echo "Done"

@@ -4,3 +4,17 @@ export VISUAL=nvim
 alias k8s='kubectl'
 alias ll='ls -lG'
 alias vim='nvim'
+
+os=$(uname -s)
+case $os in
+  Linux*)
+    alias ls='ls --color'
+    export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
+    export TERM=xterm-256color
+    ;;
+  Darwin*)
+    export CLICOLOR=1
+    export LSCOLORS='gxBxhxDxfxhxhxhxhxcxcx'
+    export TERM=screen
+    ;;
+esac
