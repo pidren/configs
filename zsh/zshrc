@@ -8,9 +8,14 @@ export GOBIN=/Users/ren/go/bin
 alias ll='ls -lG'
 alias vim='nvim'
 
-# kubectl stuff
+# kube-ps1 https://github.com/jonmosco/kube-ps1
+export KUBE_PS1_SYMBOL_COLOR="${KUBE_PS1_SYMBOL_COLOR-blue}"
+export KUBE_PS1_CTX_COLOR="${KUBE_PS1_CTX_COLOR-cyan}"
+export KUBE_PS1_NS_COLOR="${KUBE_PS1_NS_COLOR-magenta}"
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 PS1='$(kube_ps1)'$PS1
+
+
 alias k='kubectl'
 alias kp='kubectl get po'
 alias ks='kubectl get sts'
