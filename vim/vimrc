@@ -1,9 +1,12 @@
+execute pathogen#infect()
+
 "syntax stuff
 syntax on
 set showmatch
 set wildmode=longest,list
 
 "tabs
+filetype plugin indent on
 set tabstop=3
 set shiftwidth=3
 set expandtab
@@ -13,7 +16,6 @@ set backspace=indent,eol,start
 
 "colorscheme
 set background=dark
-colorscheme molokai
 set colorcolumn=85
 
 "go stuff
@@ -26,15 +28,6 @@ set hlsearch
 set ruler
 set confirm
 set cmdheight=1
-
-set laststatus=2
-set statusline=
-set statusline+=%<\                       " cut at start
-set statusline+=%2*[%n%H%M%R%W]%*\        " flags and buf no
-set statusline+=%-40f\                    " path
-set statusline+=%=%1*%y%*%*\              " file type
-set statusline+=%10((%l,%c)%)\            " line and column
-set statusline+=%P                        " percentage of file
 
 "searching options
 set ignorecase
