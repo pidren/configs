@@ -24,6 +24,8 @@ cp tmux/cpu.sh /usr/local/bin
 cp tmux/tmux.conf ~/.tmux.conf
 
 # vimrc
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 cp vim/vimrc ~/.vimrc
 
 # docker
