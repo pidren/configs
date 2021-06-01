@@ -45,6 +45,9 @@ mkdir ~/workspace/go/bin
 mkdir ~/workspace/go/pkg
 mkdir ~/workspace/go/src
 
+# python3
+brew install python3
+
 # go plugin for vim
 # https://github.com/fatih/vim-go
 mkdir -p ~/.vim/bundle/
